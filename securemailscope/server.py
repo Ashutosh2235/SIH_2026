@@ -13,7 +13,7 @@ Uploaded captures are written to a temp file, analysed, and deleted immediately:
 only the metadata-only report is kept, and only in memory.
 """
 from __future__ import annotations
-
+from pathlib import Path
 import json
 import os
 import tempfile
@@ -25,6 +25,9 @@ from flask import Flask, Response, abort, jsonify, redirect, request, send_from_
 
 from . import __version__, report
 from .pipeline import Options, analyze
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SAMPLES_DIR = PROJECT_ROOT / "samples"
 
 MAX_UPLOAD = 256 * 1024 * 1024
 KEEP = 20
@@ -106,7 +109,7 @@ def create_app(trust_store: str | None = None, baseline_db: str | None = None) -
     def api_demo():
         """Generate the demo captures once, learn the clean week, then analyse the demo capture."""
         from .samples import generate
-        d = _demo_dir()
+        d = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "samples"))
         paths = {"trust_store": os.path.join(d, "demo-ca.pem"), "baseline": os.path.join(d, "healthy_baseline.pcap"),
                  "demo": os.path.join(d, "demo_enterprise.pcap")}
         if not all(os.path.exists(p) for p in paths.values()):
