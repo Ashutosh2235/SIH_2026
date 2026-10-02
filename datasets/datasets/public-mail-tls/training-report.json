@@ -1,0 +1,64 @@
+{
+  "model": "HistGradientBoostingRegressor",
+  "trained_on": "4000 synthetic sessions labelled by the rules engine (seed 7) + 2830 public-derived sessions (train split of public-mail-tls)",
+  "metrics": {
+    "synthetic_holdout": {
+      "n": 800,
+      "r2": 0.991,
+      "mae": 1.61,
+      "class_agreement": 0.949
+    },
+    "dataset_val": {
+      "n": 607,
+      "r2": 0.975,
+      "mae": 2.14,
+      "class_agreement": 0.937,
+      "constructed_n": 569,
+      "constructed_class_agreement": 0.947
+    },
+    "dataset_test": {
+      "n": 606,
+      "r2": 0.918,
+      "mae": 3.45,
+      "class_agreement": 0.924,
+      "constructed_n": 556,
+      "constructed_class_agreement": 0.933
+    },
+    "dataset_test_synthetic_only_model": {
+      "n": 606,
+      "r2": -0.188,
+      "mae": 19.77,
+      "class_agreement": 0.611,
+      "constructed_n": 556,
+      "constructed_class_agreement": 0.595
+    },
+    "dataset_test_starttls_variants_only_model": {
+      "n": 606,
+      "r2": -0.08,
+      "mae": 16.63,
+      "class_agreement": 0.68,
+      "constructed_n": 556,
+      "constructed_class_agreement": 0.669
+    },
+    "lab_leave_one_server_out": {
+      "healthy": {
+        "n": 54,
+        "matches_configuration": 54,
+        "rate": 1.0,
+        "mae_vs_rules": 0.2
+      },
+      "legacy": {
+        "n": 18,
+        "matches_configuration": 18,
+        "rate": 1.0,
+        "mae_vs_rules": 12.59
+      },
+      "weak": {
+        "n": 30,
+        "matches_configuration": 30,
+        "rate": 1.0,
+        "mae_vs_rules": 1.42
+      }
+    }
+  }
+}

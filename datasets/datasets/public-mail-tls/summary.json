@@ -1,0 +1,1926 @@
+{
+  "tool": "SecureMailScope 1.0.0",
+  "seed": 2026,
+  "rows": 4043,
+  "origins": {
+    "real": 21,
+    "lab": 102,
+    "transplant": 210,
+    "augmented": 3710
+  },
+  "splits": {
+    "test": 606,
+    "train": 2830,
+    "val": 607
+  },
+  "protocols": {
+    "SMTP": 2011,
+    "IMAP": 1109,
+    "POP3": 923
+  },
+  "tls_versions": {
+    "none": 1050,
+    "TLS 1.2": 1752,
+    "TLS 1.3": 794,
+    "TLS 1.0": 257,
+    "TLS 1.3 (draft 20)": 37,
+    "TLS 1.1": 153
+  },
+  "risk_classes": {
+    "high": 1038,
+    "critical": 2029,
+    "minimal": 180,
+    "medium": 355,
+    "low": 441
+  },
+  "per_source": {
+    "weber-ultimate": {
+      "real": 17,
+      "transplant": 162,
+      "augmented": 2381
+    },
+    "ws-smtp": {
+      "real": 1
+    },
+    "ws-imf": {
+      "real": 1
+    },
+    "ws-tnef": {
+      "real": 1
+    },
+    "ws-imap": {
+      "real": 1
+    },
+    "lab-r1-good-relay": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r1-good-submission": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r1-good-imap": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r1-good-pop3": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r1-good-imaps": {
+      "lab": 1
+    },
+    "lab-r1-good-smtps": {
+      "lab": 1
+    },
+    "lab-r1-strip-submission": {
+      "lab": 1
+    },
+    "lab-r1-strip-imap": {
+      "lab": 1
+    },
+    "lab-r1-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r1-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r1-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r1-weak-submission": {
+      "lab": 1
+    },
+    "lab-r1-weak-imap": {
+      "lab": 1
+    },
+    "lab-r1-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r1-old-relay": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r1-old-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r1-old-pop3": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-good-relay": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-good-submission": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-good-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r2-good-pop3": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-good-imaps": {
+      "lab": 1
+    },
+    "lab-r2-good-smtps": {
+      "lab": 1
+    },
+    "lab-r2-strip-submission": {
+      "lab": 1
+    },
+    "lab-r2-strip-imap": {
+      "lab": 1
+    },
+    "lab-r2-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r2-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r2-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r2-weak-submission": {
+      "lab": 1
+    },
+    "lab-r2-weak-imap": {
+      "lab": 1
+    },
+    "lab-r2-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r2-old-relay": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-old-imap": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r2-old-pop3": {
+      "lab": 1,
+      "augmented": 7
+    },
+    "lab-r3-good-relay": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r3-good-submission": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r3-good-imap": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r3-good-pop3": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r3-good-imaps": {
+      "lab": 1
+    },
+    "lab-r3-good-smtps": {
+      "lab": 1
+    },
+    "lab-r3-strip-submission": {
+      "lab": 1
+    },
+    "lab-r3-strip-imap": {
+      "lab": 1
+    },
+    "lab-r3-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r3-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r3-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r3-weak-submission": {
+      "lab": 1
+    },
+    "lab-r3-weak-imap": {
+      "lab": 1
+    },
+    "lab-r3-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r3-old-relay": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r3-old-imap": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r3-old-pop3": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r4-good-relay": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r4-good-submission": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r4-good-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r4-good-pop3": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r4-good-imaps": {
+      "lab": 1
+    },
+    "lab-r4-good-smtps": {
+      "lab": 1
+    },
+    "lab-r4-strip-submission": {
+      "lab": 1
+    },
+    "lab-r4-strip-imap": {
+      "lab": 1
+    },
+    "lab-r4-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r4-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r4-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r4-weak-submission": {
+      "lab": 1
+    },
+    "lab-r4-weak-imap": {
+      "lab": 1
+    },
+    "lab-r4-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r4-old-relay": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r4-old-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r4-old-pop3": {
+      "lab": 1,
+      "augmented": 7
+    },
+    "lab-r5-good-relay": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r5-good-submission": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r5-good-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r5-good-pop3": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r5-good-imaps": {
+      "lab": 1
+    },
+    "lab-r5-good-smtps": {
+      "lab": 1
+    },
+    "lab-r5-strip-submission": {
+      "lab": 1
+    },
+    "lab-r5-strip-imap": {
+      "lab": 1
+    },
+    "lab-r5-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r5-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r5-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r5-weak-submission": {
+      "lab": 1
+    },
+    "lab-r5-weak-imap": {
+      "lab": 1
+    },
+    "lab-r5-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r5-old-relay": {
+      "lab": 1,
+      "augmented": 10
+    },
+    "lab-r5-old-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r5-old-pop3": {
+      "lab": 1,
+      "augmented": 6
+    },
+    "lab-r6-good-relay": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r6-good-submission": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r6-good-imap": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r6-good-pop3": {
+      "lab": 1,
+      "augmented": 9
+    },
+    "lab-r6-good-imaps": {
+      "lab": 1
+    },
+    "lab-r6-good-smtps": {
+      "lab": 1
+    },
+    "lab-r6-strip-submission": {
+      "lab": 1
+    },
+    "lab-r6-strip-imap": {
+      "lab": 1
+    },
+    "lab-r6-strip-pop3": {
+      "lab": 1
+    },
+    "lab-r6-weak-relay": {
+      "lab": 1,
+      "augmented": 23
+    },
+    "lab-r6-weak-imaps": {
+      "lab": 1
+    },
+    "lab-r6-weak-submission": {
+      "lab": 1
+    },
+    "lab-r6-weak-imap": {
+      "lab": 1
+    },
+    "lab-r6-weak-pop3": {
+      "lab": 1
+    },
+    "lab-r6-old-relay": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r6-old-imap": {
+      "lab": 1,
+      "augmented": 8
+    },
+    "lab-r6-old-pop3": {
+      "lab": 1,
+      "augmented": 7
+    },
+    "ws-tls12-aes128ccm": {
+      "transplant": 3,
+      "augmented": 51
+    },
+    "ws-tls12-aes256gcm": {
+      "transplant": 3,
+      "augmented": 51
+    },
+    "ws-tls12-chacha20poly1305": {
+      "transplant": 21,
+      "augmented": 423
+    },
+    "ws-tls12-dsb": {
+      "transplant": 6,
+      "augmented": 138
+    },
+    "ws-tls13-rfc8446": {
+      "transplant": 6,
+      "augmented": 47
+    },
+    "ws-tls13-20-chacha20poly1305": {
+      "transplant": 6,
+      "augmented": 53
+    },
+    "ws-tls-renegotiation": {
+      "transplant": 3,
+      "augmented": 68
+    }
+  },
+  "sources": [
+    {
+      "id": "weber-ultimate",
+      "url": "https://weberblog.net/wp-content/uploads/2020/02/The-Ultimate-PCAP.pcapng.gz",
+      "sha256": "ecbca543fbe011a85c8876420fcb2c244b9290ad653d13cd1a574158167073f4",
+      "sha256_used": "ecbca543fbe011a85c8876420fcb2c244b9290ad653d13cd1a574158167073f4",
+      "provides": "real SMTP/IMAP/POP3 (cleartext, STARTTLS, implicit TLS) and ~60 real TLS handshakes",
+      "licence": "Johannes Weber, weberblog.net/the-ultimate-pcap (no licence stated; versioned, may change)"
+    },
+    {
+      "id": "ws-smtp",
+      "url": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/smtp.pcap",
+      "sha256": "17ad230db1b6fd5dd18eb311092df1cf6eb162054bdb47697b89bef5a86a47ab",
+      "sha256_used": "17ad230db1b6fd5dd18eb311092df1cf6eb162054bdb47697b89bef5a86a47ab",
+      "provides": "real cleartext SMTP",
+      "licence": "Wireshark wiki SampleCaptures; check the wiki's terms before redistributing the raw file"
+    },
+    {
+      "id": "ws-imf",
+      "url": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/sample-imf.pcap.gz",
+      "sha256": "7e1e5deec73e2e5725efd342bbc65e8b79f6a8593cf6837e6255fc010b01654c",
+      "sha256_used": "7e1e5deec73e2e5725efd342bbc65e8b79f6a8593cf6837e6255fc010b01654c",
+      "provides": "real cleartext SMTP with MIME",
+      "licence": "Wireshark wiki SampleCaptures; check the wiki's terms before redistributing the raw file"
+    },
+    {
+      "id": "ws-tnef",
+      "url": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/sample-TNEF.pcap.gz",
+      "sha256": "4d89c204e785e4a7b20c600bc9317eacb5fe7acd51824d6abb3814601cdac980",
+      "sha256_used": "4d89c204e785e4a7b20c600bc9317eacb5fe7acd51824d6abb3814601cdac980",
+      "provides": "real cleartext SMTP with attachments",
+      "licence": "Wireshark wiki SampleCaptures; check the wiki's terms before redistributing the raw file"
+    },
+    {
+      "id": "ws-imap",
+      "url": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/imap.cap",
+      "sha256": "fa9a9bcca7b7f2943d740d46b075565b0dbbcc0f60ab321bf577a7be9724b5a8",
+      "sha256_used": "fa9a9bcca7b7f2943d740d46b075565b0dbbcc0f60ab321bf577a7be9724b5a8",
+      "provides": "real cleartext IMAP",
+      "licence": "Wireshark wiki SampleCaptures; check the wiki's terms before redistributing the raw file"
+    },
+    {
+      "id": "ws-tls12-aes128ccm",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls12-aes128ccm.pcap",
+      "sha256": "175e4e1186aa06029e5c5a8abedb98c2d36a2fd0033f1e39f3272299ee246a57",
+      "sha256_used": "175e4e1186aa06029e5c5a8abedb98c2d36a2fd0033f1e39f3272299ee246a57",
+      "provides": "TLS 1.2 AES-CCM",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls12-aes256gcm",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls12-aes256gcm.pcap",
+      "sha256": "24d95f17af5b0b6a6d178ddfc920b62429759d96c29ca568479bfa34fba4f826",
+      "sha256_used": "24d95f17af5b0b6a6d178ddfc920b62429759d96c29ca568479bfa34fba4f826",
+      "provides": "TLS 1.2 AES-256-GCM",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls12-chacha20poly1305",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls12-chacha20poly1305.pcap",
+      "sha256": "fc69b8b1bf48472957477c86d585bed1bf9fcd168484aa9c20ba9435d62d1f7b",
+      "sha256_used": "fc69b8b1bf48472957477c86d585bed1bf9fcd168484aa9c20ba9435d62d1f7b",
+      "provides": "TLS 1.2 ChaCha20-Poly1305, several key exchanges",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls12-dsb",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls12-dsb.pcapng",
+      "sha256": "d6034147bd02a206cca5d335d11c1292e7ed44a42d58f342c05bbd31318f81d8",
+      "sha256_used": "d6034147bd02a206cca5d335d11c1292e7ed44a42d58f342c05bbd31318f81d8",
+      "provides": "TLS 1.2",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls13-rfc8446",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls13-rfc8446.pcap",
+      "sha256": "e24aaedb2912f9ea371f8a1fbd360ccccc0154737aa5e422e206cd8bc0b783aa",
+      "sha256_used": "e24aaedb2912f9ea371f8a1fbd360ccccc0154737aa5e422e206cd8bc0b783aa",
+      "provides": "TLS 1.3 (RFC 8446)",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls13-20-chacha20poly1305",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls13-20-chacha20poly1305.pcap",
+      "sha256": "0fcafe42260b12a29f87e2e778740989d97f2b2be2eacfd1ddc3c070d8eeb8af",
+      "sha256_used": "0fcafe42260b12a29f87e2e778740989d97f2b2be2eacfd1ddc3c070d8eeb8af",
+      "provides": "TLS 1.3 draft 20",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "ws-tls-renegotiation",
+      "url": "https://gitlab.com/wireshark/wireshark/-/raw/master/test/captures/tls-renegotiation.pcap",
+      "sha256": "a3472920f5080ac32ab56d86def19dcbb418f25f4e197674d0d2a6a6e59a34ae",
+      "sha256_used": "a3472920f5080ac32ab56d86def19dcbb418f25f4e197674d0d2a6a6e59a34ae",
+      "provides": "TLS 1.2 with renegotiation",
+      "licence": "Wireshark source tree test/captures (GPL-2.0-or-later project)"
+    },
+    {
+      "id": "lab-r1-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b6dd644d80d1dddae6311b4637953cfa2c355d271f5ad70448db66955457800f",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c5bbffad6581ca90c055b11da0868e2961b687e0d4099089511322195a51de2e",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c19693285d0a0ee64f703c0403fb275f5d1abfedaa832883f0b58b64420e55c9",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "ce7c18e363c3e542a6d2dddc39265c8d11ecd081d4d85ac270901cd456010c26",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "bff8c6ac5f0af31c7613b9e971249e34d96a47457688acca20da6982a7c2581b",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "20be1fafedc2b6628eb6fc0fd0984fe6d4a3ba619c76c8481cdd8029d29a8055",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "bbc6b31dfe992ff44b1bb563bd7ac4cfcb152375ff4af07310ed6d1d4c44781b",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "666df815c7bacf98a9aca03d0360c9b5aaa224d1c1ae0f5824475605cde32a24",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c4c2bbbbc10d81917895492272b077e2df12665863901a6996ddabbb8a0ea384",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0cc1ee0b2b1f11d4c8b574fc33e45f766ba31717d992b9da9b3e3dbdec71c0c4",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "e3ca8c9e79a3d5d79b3f7cdd98aaaa4aef734edea16e669c3450e9f9b49e65a7",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a1b4a6611e22301837aad10e7f243dfbfe752e2903575d485298849ce14928bc",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "afb9bc94f04c0aa1ddcd0f46fddb4560318414963057d231d527b63e5cde0fad",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "2111f9d41a41ea9da1954678e41223ac4932a75c65022db87ead5e753571fb6d",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "acc9fd1b2a37978eea08e9ccfd1da49278223764409bd2353f05d25cda78c623",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0c09a64b02bd6f5b43bdb31116d4b0a4ddcba5659cdb099b78b5882cba755d07",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r1-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "7a4e2532ecfccce894217f9251c68dc3d6933a27adcb4800bf0abc19704aaae0",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "dae7c851347a45a0903588ffa0b32f338b85b3adfbe55c723ca4b267fda3b0fd",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "15bfe8f8c816b8c8e8a5f6daec513e9f8545641bc7fe58aa35608aad5ee4cd7b",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "bd3f012667720a64c83a4db95009571e8c2e9ee23a03bade88f0546f6cffcdac",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "155b9081684da36e624323c4a5dbd2538f8e9b50f0d0c9640212b8b39d9f15e1",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "ef2a900f67c4642a6922a4be1fb85cf9ba948b36c37fd7ae1908d4e0f2df419d",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "84d76621c4fd2cdec744d615828ca54ae40f122ddf00c6e04effe403ccc32793",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "21e8d0c5b8ee759e382db8b9be4d46344e2aec9251532ed7f25c40ddf96db8be",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0eb7cd9ee4da4e68f3028eba1b1832df7532cd8f3dbf8577464e40efa53ff55e",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "7f354cf0f55110eef7be9f56c4cff148d51fc308cb42a44008b550fc31a95049",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "28be9ff38b3705c2bdf69ca40740cac935290c0ba8d4075f43cf8c024053c35c",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "226e014b8f6e63cbd9acebca76f153fd9e13884ec1dfb90ba2023534ef014b07",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a3ec9d3253fe5fcd680814cf59f13154dda591624adfe26b9f954dda5175b324",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c2572cffa515316a3a756c9043ce4420bb7f115e022cac58524bfded320cbf44",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "d5e79d0822ecf7d8baed72d4cbb83d05d9c8e01226faad45d8d8e1a1731bf574",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "43867b07d67f661884ffa370b7b20c74b206d14c1a61a35d2d554b12a0f68d27",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c3fc91431dd420e7f2de31b5046049006fc42cbc2e863ec81de67a6d8d768f97",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r2-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "f854dfe93f3d9a40dceed365ef48be6f774d9e8875906759181de0cbd2e1d561",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b4476cd0acecc8b17b1536b5ef11c998d8c4cdc5e0e7d3890f429b405cb71373",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4e66e8880f460ee49b7836a68a8071dcaac6c3d00bff3b8cc0674996f9bb96b5",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "55c86a4279df3159fa3b1bcef6001607afb8efbe99e43b202f91e25b86c644f9",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "5e7c90b018d38a62f40526580d8331bd3ee56aa62e142be0742bcac4d6a99818",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "87f60b4b03f53e25bfbdc490824657404dc14ea05abe4eb4c8f9f35647aa4785",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "2c149ceb399c928da4db0993660625d6d2d0085a6c0570b118b967ea9d312baf",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0aa68a9de8c00b005a03dedee330e7dcf66338bfdcd325cbe3b6583a1dda0b6c",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "9f99f7d1faa2a2ba16f2ef19d94712b0245a37c92e5c0940c339244153d615aa",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b1540aabfed92388731fa057fbd9e0ac5910b53291e2624249d4a0cc067fba5a",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a174c48ff4ad5fe760f88c1cfe5c0faabad05bba9f2d664dbeb39236922b9224",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0ebfa245f48f704448ec196f9695be0db264c855e0648e92d9345b713a3ef61d",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "de3cac02eafc210787a7085f548b1a9954c51866a1c8631b0cac4116eafaad98",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "bb4f9071c4a939b2def3373478dbb0151a66715c3fe80770efa4d7a39fa2b086",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "3d00dd802d216d7274e69de56bff252c0e8062f4513108e7b1c9571b85d166f5",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4dfd6c9ee4e662f9387bd6a26ebf7ba176cb9ba472b7619edde5b4b564d4f187",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "471cc5cd3f08a8f1a6cd353f3ae507c64593a500faf77c02cae3603c43f077fe",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r3-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "10170e2cff88235f02aaac5d6a180d3a595538e292ca7a7b340a173fc4f1f2eb",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4d86217f4be045a44fe7e2bde39db1bfb73609c8fe1939179f37b15ee65d9ad2",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "838668844d121a0dd5150bb71b456a3aacb657f6741c27780a82e0c0e803f0a0",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "62f20b806d3925f124db978a29a77686dbac53f9cbdac7a996e72a9f1f86247c",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "3e9d4540a63861cddbbe810b002eb8210584c1bd16bae6678a27f009dd40549b",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "9f6cc1b2e50f089f3233f5a1c58fa2542cba764da1058427c28d0b91239007ac",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "7f4aa6311beaee59ecf599d73ac343965f2bd3b1eb619f81fdaae495d73579ad",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "557df4584200bdfd6b66f886b1c7caee535f9be43995ea4ec70f50c1d9c7898e",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "7d4da60573eca219d37aeb9ccfe17bd11f81c11f83a9fb139904842e56db1b43",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "971b5bfdd4ed38c318eed1e802abd5d4ded9a6f5717172df5498bdcc936aae8e",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "33b4a43f58ca8c0fd452c0035f6a90a74a8f37b03a4e99ffd13dbbabadcf2dcb",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4562ef482900b0cb9bdd9ce8641b1d517b72a3d8fe8697d2a24cfb7b475a7476",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "f9f49d0adff5a3d41498ea1422b370c99344b283bf5f368dcb2368556d0347b9",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b4caae88567a23c284590f0caebb288ed8c24ba04e7a4bbcac10bdb346bbb920",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4f298789299f1c95d7f2203bd88715a7c97306959bef3820b9d4fac6eecdedf8",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "f3dcd145259e3dcadef7a18651a8be2332a616e7fd42625247097a5457dcaed8",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "df695ecf2f6380e1e9d4997b6e2c3d9f5bbdc9fdbd080e53ac508c1149182ffa",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r4-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b6acad5331b8183d278b994247f146920df9c5a22d1955b9c7b268b6abc2daaa",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "9c3989e2bc4615006dfea523c64710ad010b8c8958d47bfcab0306eb265d39d3",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c8e35c0196fc6bb7aebda89d034e8725fa646c05a377d95f77cdfa5eeedfa0cb",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "4e436fb4c081a0352ea2b4beef2c5a64e23b6544fa40068df6371e45c7a212ff",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "ff634282afeb58fc8004a576c1f1edde52635ca466114b107659fb0f0ecae6f8",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "ebccdd99254f438e9256fbc7cfda325f9fa17817e8d829ae2fe172b64873aaca",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "daa23056374f487c0f5e436beb7625e3044e7c34a9a054e02d5d730346bb9b52",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "43f407b30a52f89097dd45ed1b7f92b4470e7291f347678137f8ee2b34130255",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "394a5726cb176bca42fa5c8dff77d189897570305cb711debf587b3fe403e60f",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a21619de9769e879c205d50abf6b7a953fe9cee06d8c7e350dc76a54f01fc608",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "56e41cba10ea998debd387ed512080d8c9be976a79a473c55486c678e4539356",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "56e354abcf3b55fa3e83f8d0200aafab711a92c3f86f8554b6bdcbcb183d7d8e",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "293df47a430745996213dedde7e07178fea8a7ff9c205ad80572c8651004508d",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0fe67232b184709b033390ac0eba06c1f6ec9486eed605cc1cdf90d586a3c9a8",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "08814726e930c555541e80218795b50a95624a7461ce4c8d8617c92f43d3ca28",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "fe7603b5c0077f5064b4fbbbcbcf5c076c29f7ba47398851b5e882257d43118d",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "c1fe0f86fee93ff971c239d0f52a689f9c3bf3377356808ab75275b4ba5a47f7",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r5-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "58c08345f08be660814fc80914575fbc3792cadc5f010a51e924752791504fe9",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "aba6ff7ba3f02dcb2abb036abd9127760ad213e29adcd4add09c91f8d68ebbbf",
+      "provides": "lab healthy server: relay, STARTTLS, TLS >= 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "3ef6c919efe37eff57d0a78530ae15ec4afdcaa11053ef58831caf0cda095658",
+      "provides": "lab healthy server: submission, STARTTLS then AUTH",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a84606b47a9a2bd5e03bf228174c418381dd93e422f0dbdaf4373a2be5238feb",
+      "provides": "lab healthy server: IMAP STARTTLS then LOGIN",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "51dfc402b9b532ab4e983b3817daba6b568fa5eb5829ecedab5fe7cefced1b6b",
+      "provides": "lab healthy server: POP3 STLS then USER/PASS",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "656df80aabd737f0de8c9e491619691bd2bd14b210c1b561bb11cd4c704e45dd",
+      "provides": "lab healthy server: IMAPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-good-smtps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "227f02e5cba7cb71ea09b045957d1e179e39a141a9c7510a45ee8f0f7efe5e3f",
+      "provides": "lab healthy server: SMTPS (implicit TLS)",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-strip-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "8a45bf3b5cb40c602e94becb252fe35a6c1c8dd2421d48e2ea91d3c9eadd97ce",
+      "provides": "lab healthy server: submission through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-strip-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "d9e2224588c0ca7efa97eb49aee796cb27ec395c94a9ad1ef8c001e63b29777f",
+      "provides": "lab healthy server: IMAP through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-strip-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "42c335c2dd7257a8e277f9c3eb3d3e2f4f3368a1ce174c9f502cb5d1d47312f7",
+      "provides": "lab healthy server: POP3 through the stripping proxy",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-weak-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "0888041c7ff0c132b27b868437a16c581cf50dc09cda993073ebb7195d32593e",
+      "provides": "lab weak server: relay, STARTTLS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-weak-imaps",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "47004969faf71fba22bcf3177e46f9029e61fcfe07ba1ac329ac3779c99d92df",
+      "provides": "lab weak server: IMAPS, TLS 1.2",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-weak-submission",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "b9fe6ca2e6f04cdba0092e1dd417d591120386b3bfd48c7cf8ddc7564d45dc28",
+      "provides": "lab weak server: submission, AUTH LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-weak-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "1c9589c3805f460dab412216aceb4c6de3925011b44c99c8273342145b46c1a6",
+      "provides": "lab weak server: IMAP LOGIN in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-weak-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "5534b6dd23f4177c089af6583de8dfe249080f3e8f2379bf74e0773c950d2925",
+      "provides": "lab weak server: POP3 USER/PASS in cleartext",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-old-relay",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "6d8f45434d057d2e693c89e0c5f59ee04f9d77415b9269382de48a7415358fe0",
+      "provides": "lab legacy server: relay, STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-old-imap",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a63bf28f7fae08895e25636ff6091b5f7419f311e12f7ac6c47f052d7b2eaf2d",
+      "provides": "lab legacy server: IMAP STARTTLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    },
+    {
+      "id": "lab-r6-old-pop3",
+      "url": "",
+      "sha256": "",
+      "sha256_used": "a4cb0c9a824df3169226afeefa36b98761cca9f7225047d269c73e9c9f677999",
+      "provides": "lab legacy server: POP3 STLS, TLS 1.0 RSA AES-CBC",
+      "licence": "generated by this project's lab (lab/)"
+    }
+  ],
+  "evaluation": {
+    "by_variant": {
+      "cert_expired": {
+        "n": 82,
+        "detected": 82,
+        "rate": 1.0,
+        "pipeline": 82,
+        "pipeline_n": 82,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_hostname_mismatch": {
+        "n": 70,
+        "detected": 70,
+        "rate": 1.0,
+        "pipeline": 70,
+        "pipeline_n": 70,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_self_signed": {
+        "n": 82,
+        "detected": 82,
+        "rate": 1.0,
+        "pipeline": 82,
+        "pipeline_n": 82,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_sha1": {
+        "n": 82,
+        "detected": 82,
+        "rate": 1.0,
+        "pipeline": 82,
+        "pipeline_n": 82,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_untrusted": {
+        "n": 82,
+        "detected": 82,
+        "rate": 1.0,
+        "pipeline": 82,
+        "pipeline_n": 82,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_weak_key": {
+        "n": 82,
+        "detected": 82,
+        "rate": 1.0,
+        "pipeline": 82,
+        "pipeline_n": 82,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cipher_3des": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cipher_rc4": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cleartext_credentials": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "combo": {
+        "n": 376,
+        "detected": 376,
+        "rate": 1.0,
+        "pipeline": 376,
+        "pipeline_n": 376,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "downgrade_sentinel": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "handshake_failure": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "inject_client": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "inject_server": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "no_forward_secrecy": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "nonstandard_port": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "strip_refuse": {
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "strip_remove": {
+        "n": 237,
+        "detected": 0,
+        "rate": 0.0,
+        "pipeline": 230,
+        "pipeline_n": 230,
+        "pipeline_rate": 1.0,
+        "abstained": 7
+      },
+      "strip_rewrite": {
+        "n": 237,
+        "detected": 237,
+        "rate": 1.0,
+        "pipeline": 237,
+        "pipeline_n": 237,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_1_0": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_1_1": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_compression": {
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      }
+    },
+    "by_issue": {
+      "cert_expired": {
+        "rule": "SMS-CERT-001",
+        "n": 108,
+        "detected": 108,
+        "rate": 1.0,
+        "pipeline": 108,
+        "pipeline_n": 108,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_hostname_mismatch": {
+        "rule": "SMS-CERT-003",
+        "n": 92,
+        "detected": 92,
+        "rate": 1.0,
+        "pipeline": 92,
+        "pipeline_n": 92,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_self_signed": {
+        "rule": "SMS-CERT-002",
+        "n": 116,
+        "detected": 116,
+        "rate": 1.0,
+        "pipeline": 116,
+        "pipeline_n": 116,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_sha1": {
+        "rule": "SMS-CERT-005",
+        "n": 101,
+        "detected": 101,
+        "rate": 1.0,
+        "pipeline": 101,
+        "pipeline_n": 101,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_untrusted": {
+        "rule": "SMS-CERT-007",
+        "n": 115,
+        "detected": 115,
+        "rate": 1.0,
+        "pipeline": 115,
+        "pipeline_n": 115,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cert_weak_key": {
+        "rule": "SMS-CERT-004",
+        "n": 112,
+        "detected": 112,
+        "rate": 1.0,
+        "pipeline": 112,
+        "pipeline_n": 112,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cipher_3des": {
+        "rule": "SMS-TLS-002",
+        "n": 139,
+        "detected": 139,
+        "rate": 1.0,
+        "pipeline": 139,
+        "pipeline_n": 139,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cipher_rc4": {
+        "rule": "SMS-TLS-002",
+        "n": 150,
+        "detected": 150,
+        "rate": 1.0,
+        "pipeline": 150,
+        "pipeline_n": 150,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "cleartext_credentials": {
+        "rule": "SMS-CRED-001",
+        "n": 550,
+        "detected": 550,
+        "rate": 1.0,
+        "pipeline": 550,
+        "pipeline_n": 550,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "downgrade_sentinel": {
+        "rule": "SMS-TLS-010",
+        "n": 139,
+        "detected": 139,
+        "rate": 1.0,
+        "pipeline": 139,
+        "pipeline_n": 139,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "handshake_failure": {
+        "rule": "SMS-TLS-007",
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "inject_client": {
+        "rule": "SMS-INJ-001",
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "inject_server": {
+        "rule": "SMS-INJ-001",
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "no_forward_secrecy": {
+        "rule": "SMS-TLS-003",
+        "n": 136,
+        "detected": 136,
+        "rate": 1.0,
+        "pipeline": 136,
+        "pipeline_n": 136,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "nonstandard_port": {
+        "rule": "SMS-PORT-001",
+        "n": 544,
+        "detected": 544,
+        "rate": 1.0,
+        "pipeline": 544,
+        "pipeline_n": 544,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "strip_refuse": {
+        "rule": "SMS-STRIP-001",
+        "n": 266,
+        "detected": 266,
+        "rate": 1.0,
+        "pipeline": 266,
+        "pipeline_n": 266,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "strip_remove": {
+        "rule": "SMS-BASE-001",
+        "n": 237,
+        "detected": 0,
+        "rate": 0.0,
+        "pipeline": 230,
+        "pipeline_n": 230,
+        "pipeline_rate": 1.0,
+        "abstained": 7
+      },
+      "strip_rewrite": {
+        "rule": "SMS-STRIP-001",
+        "n": 237,
+        "detected": 237,
+        "rate": 1.0,
+        "pipeline": 237,
+        "pipeline_n": 237,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_1_0": {
+        "rule": "SMS-TLS-001",
+        "n": 149,
+        "detected": 149,
+        "rate": 1.0,
+        "pipeline": 149,
+        "pipeline_n": 149,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_1_1": {
+        "rule": "SMS-TLS-001",
+        "n": 153,
+        "detected": 153,
+        "rate": 1.0,
+        "pipeline": 153,
+        "pipeline_n": 153,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "tls_compression": {
+        "rule": "SMS-TLS-008",
+        "n": 142,
+        "detected": 142,
+        "rate": 1.0,
+        "pipeline": 142,
+        "pipeline_n": 142,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      }
+    },
+    "by_protocol": {
+      "IMAP": {
+        "n": 1010,
+        "detected": 939,
+        "rate": 0.93,
+        "pipeline": 1010,
+        "pipeline_n": 1010,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "POP3": {
+        "n": 838,
+        "detected": 798,
+        "rate": 0.952,
+        "pipeline": 838,
+        "pipeline_n": 838,
+        "pipeline_rate": 1.0,
+        "abstained": 0
+      },
+      "SMTP": {
+        "n": 1862,
+        "detected": 1736,
+        "rate": 0.932,
+        "pipeline": 1855,
+        "pipeline_n": 1855,
+        "pipeline_rate": 1.0,
+        "abstained": 7
+      }
+    },
+    "lab": {
+      "good-imap": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "good-imaps": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "good-pop3": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "good-relay": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "good-smtps": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "good-submission": {
+        "n": 6,
+        "passed": 6,
+        "expected": "(clean)"
+      },
+      "old-imap": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-TLS-001;SMS-TLS-003;SMS-TLS-004"
+      },
+      "old-pop3": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-TLS-001;SMS-TLS-003;SMS-TLS-004"
+      },
+      "old-relay": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-TLS-001;SMS-TLS-003;SMS-TLS-004"
+      },
+      "strip-imap": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-STRIP-001"
+      },
+      "strip-pop3": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-STRIP-001"
+      },
+      "strip-submission": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-STRIP-001"
+      },
+      "weak-imap": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-CRED-001"
+      },
+      "weak-imaps": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-CERT-002;SMS-CERT-003;SMS-CERT-004;SMS-CERT-005"
+      },
+      "weak-pop3": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-CRED-001"
+      },
+      "weak-relay": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-CERT-002;SMS-CERT-003;SMS-CERT-004;SMS-CERT-005"
+      },
+      "weak-submission": {
+        "n": 6,
+        "passed": 6,
+        "expected": "SMS-CRED-001"
+      }
+    },
+    "strip_remove_all_in_one_capture_no_history": {
+      "n": 230,
+      "detected": 230,
+      "rate": 1.0
+    }
+  },
+  "augmented_pcap": "augmented.pcap",
+  "prototype_tests": {
+    "dir": "prototype-tests",
+    "captures": 23,
+    "sessions": 219,
+    "history_sessions": 50
+  },
+  "wireshark_crosscheck": {
+    "tshark_sessions": 3259,
+    "our_tls_sessions": 2993,
+    "fields": {
+      "version": {
+        "compared": 2993,
+        "agree": 2993,
+        "rate": 1.0
+      },
+      "cipher_code": {
+        "compared": 2993,
+        "agree": 2993,
+        "rate": 1.0
+      },
+      "compression": {
+        "compared": 2993,
+        "agree": 2993,
+        "rate": 1.0
+      },
+      "sni": {
+        "compared": 2231,
+        "agree": 2231,
+        "rate": 1.0
+      },
+      "cert_sha256": {
+        "compared": 1742,
+        "agree": 1742,
+        "rate": 1.0
+      }
+    },
+    "mismatches": [],
+    "decoded_by_both": 2993
+  }
+}

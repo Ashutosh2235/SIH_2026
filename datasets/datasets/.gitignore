@@ -1,0 +1,4 @@
+# regenerable in seconds with `python -m securemailscope dataset build`; the pcap also carries source bytes
+*.pcap
+sessions.jsonl
+dataset-ca.pem

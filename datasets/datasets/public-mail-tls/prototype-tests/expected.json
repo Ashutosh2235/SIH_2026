@@ -1,0 +1,2949 @@
+{
+  "trust_store": "../dataset-ca.pem",
+  "history": "baseline-history.pcap",
+  "captures": {
+    "cert_expired.pcap": [
+      {
+        "client": "198.18.8.120",
+        "row_id": "A01836",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.142",
+        "row_id": "A01858",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.164",
+        "row_id": "A01880",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.223",
+        "row_id": "A02451",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.246",
+        "row_id": "A02474",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.169",
+        "row_id": "A03421",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.238",
+        "row_id": "A03490",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.5",
+        "row_id": "A03513",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cert_hostname_mismatch.pcap": [
+      {
+        "client": "198.18.8.167",
+        "row_id": "A01883",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.226",
+        "row_id": "A02454",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.249",
+        "row_id": "A02477",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.11.16",
+        "row_id": "A02500",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.14.172",
+        "row_id": "A03424",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.195",
+        "row_id": "A03447",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.14.241",
+        "row_id": "A03493",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.8",
+        "row_id": "A03516",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cert_self_signed.pcap": [
+      {
+        "client": "198.18.8.119",
+        "row_id": "A01835",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.141",
+        "row_id": "A01857",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.163",
+        "row_id": "A01879",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.222",
+        "row_id": "A02450",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.245",
+        "row_id": "A02473",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.168",
+        "row_id": "A03420",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.237",
+        "row_id": "A03489",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.4",
+        "row_id": "A03512",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cert_sha1.pcap": [
+      {
+        "client": "198.18.8.122",
+        "row_id": "A01838",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.144",
+        "row_id": "A01860",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.166",
+        "row_id": "A01882",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.225",
+        "row_id": "A02453",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.248",
+        "row_id": "A02476",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.171",
+        "row_id": "A03423",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.240",
+        "row_id": "A03492",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.7",
+        "row_id": "A03515",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cert_untrusted.pcap": [
+      {
+        "client": "198.18.8.123",
+        "row_id": "A01839",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.145",
+        "row_id": "A01861",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.168",
+        "row_id": "A01884",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.227",
+        "row_id": "A02455",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.250",
+        "row_id": "A02478",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.173",
+        "row_id": "A03425",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.242",
+        "row_id": "A03494",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.9",
+        "row_id": "A03517",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cert_weak_key.pcap": [
+      {
+        "client": "198.18.8.121",
+        "row_id": "A01837",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.143",
+        "row_id": "A01859",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.165",
+        "row_id": "A01881",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.224",
+        "row_id": "A02452",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.247",
+        "row_id": "A02475",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.170",
+        "row_id": "A03422",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.239",
+        "row_id": "A03491",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.6",
+        "row_id": "A03514",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cipher_3des.pcap": [
+      {
+        "client": "198.18.8.114",
+        "row_id": "A01830",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.136",
+        "row_id": "A01852",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.158",
+        "row_id": "A01874",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.217",
+        "row_id": "A02445",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.240",
+        "row_id": "A02468",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.163",
+        "row_id": "A03415",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.232",
+        "row_id": "A03484",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.14.255",
+        "row_id": "A03507",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cipher_rc4.pcap": [
+      {
+        "client": "198.18.8.115",
+        "row_id": "A01831",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.137",
+        "row_id": "A01853",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.159",
+        "row_id": "A01875",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.218",
+        "row_id": "A02446",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.241",
+        "row_id": "A02469",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.164",
+        "row_id": "A03416",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.233",
+        "row_id": "A03485",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.0",
+        "row_id": "A03508",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "cleartext_credentials.pcap": [
+      {
+        "client": "198.18.1.105",
+        "row_id": "A00029",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.152",
+        "row_id": "A01612",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.161",
+        "row_id": "A01621",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.170",
+        "row_id": "A01630",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.153",
+        "row_id": "A01869",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.176",
+        "row_id": "A01892",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.8.192",
+        "row_id": "A01908",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:110"
+      },
+      {
+        "client": "198.18.10.31",
+        "row_id": "A02259",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.58",
+        "row_id": "A02286",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.86",
+        "row_id": "A02314",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.158",
+        "row_id": "A03410",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "combo.pcap": [
+      {
+        "client": "198.18.7.155",
+        "row_id": "A01615",
+        "variant": "combo",
+        "issues": [
+          "cleartext_credentials",
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:1143"
+      },
+      {
+        "client": "198.18.7.164",
+        "row_id": "A01624",
+        "variant": "combo",
+        "issues": [
+          "cleartext_credentials",
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:1110"
+      },
+      {
+        "client": "198.18.7.173",
+        "row_id": "A01633",
+        "variant": "combo",
+        "issues": [
+          "cleartext_credentials",
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:1143"
+      },
+      {
+        "client": "198.18.8.124",
+        "row_id": "A01840",
+        "variant": "combo",
+        "issues": [
+          "no_forward_secrecy",
+          "cert_sha1",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005",
+          "SMS-CRED-001",
+          "SMS-TLS-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.147",
+        "row_id": "A01863",
+        "variant": "combo",
+        "issues": [
+          "tls_compression",
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007",
+          "SMS-TLS-008"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.169",
+        "row_id": "A01885",
+        "variant": "combo",
+        "issues": [
+          "tls_1_1",
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001",
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.170",
+        "row_id": "A01886",
+        "variant": "combo",
+        "issues": [
+          "no_forward_secrecy",
+          "cert_expired",
+          "nonstandard_port",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001",
+          "SMS-CRED-001",
+          "SMS-PORT-001",
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:2525"
+      },
+      {
+        "client": "198.18.8.179",
+        "row_id": "A01895",
+        "variant": "combo",
+        "issues": [
+          "cleartext_credentials",
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:2525"
+      },
+      {
+        "client": "198.18.10.61",
+        "row_id": "A02289",
+        "variant": "combo",
+        "issues": [
+          "nonstandard_port",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:1143"
+      },
+      {
+        "client": "198.18.10.228",
+        "row_id": "A02456",
+        "variant": "combo",
+        "issues": [
+          "tls_1_0",
+          "cert_self_signed",
+          "nonstandard_port",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002",
+          "SMS-CRED-001",
+          "SMS-PORT-001",
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:2525"
+      },
+      {
+        "client": "198.18.10.252",
+        "row_id": "A02480",
+        "variant": "combo",
+        "issues": [
+          "tls_1_0",
+          "cert_sha1",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005",
+          "SMS-CRED-001",
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.12.21",
+        "row_id": "A02761",
+        "variant": "combo",
+        "issues": [
+          "nonstandard_port",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001",
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:1110"
+      },
+      {
+        "client": "198.18.14.174",
+        "row_id": "A03426",
+        "variant": "combo",
+        "issues": [
+          "no_forward_secrecy",
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007",
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.221",
+        "row_id": "A03473",
+        "variant": "combo",
+        "issues": [
+          "tls_compression",
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003",
+          "SMS-TLS-008"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.14.244",
+        "row_id": "A03496",
+        "variant": "combo",
+        "issues": [
+          "tls_1_1",
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007",
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.10",
+        "row_id": "A03518",
+        "variant": "combo",
+        "issues": [
+          "tls_1_0",
+          "cert_untrusted",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007",
+          "SMS-CRED-001",
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "downgrade_sentinel.pcap": [
+      {
+        "client": "198.18.8.118",
+        "row_id": "A01834",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.140",
+        "row_id": "A01856",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.162",
+        "row_id": "A01878",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.221",
+        "row_id": "A02449",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.244",
+        "row_id": "A02472",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.167",
+        "row_id": "A03419",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.236",
+        "row_id": "A03488",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.3",
+        "row_id": "A03511",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "handshake_failure.pcap": [
+      {
+        "client": "198.18.1.107",
+        "row_id": "A00031",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.154",
+        "row_id": "A01614",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.163",
+        "row_id": "A01623",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.172",
+        "row_id": "A01632",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.155",
+        "row_id": "A01871",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.178",
+        "row_id": "A01894",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.8.194",
+        "row_id": "A01910",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:110"
+      },
+      {
+        "client": "198.18.10.33",
+        "row_id": "A02261",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.60",
+        "row_id": "A02288",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.88",
+        "row_id": "A02316",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.160",
+        "row_id": "A03412",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "inject_client.pcap": [
+      {
+        "client": "198.18.1.103",
+        "row_id": "A00027",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.150",
+        "row_id": "A01610",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.159",
+        "row_id": "A01619",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.168",
+        "row_id": "A01628",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.151",
+        "row_id": "A01867",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.174",
+        "row_id": "A01890",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.8.190",
+        "row_id": "A01906",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:110"
+      },
+      {
+        "client": "198.18.10.29",
+        "row_id": "A02257",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.56",
+        "row_id": "A02284",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.84",
+        "row_id": "A02312",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.156",
+        "row_id": "A03408",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "inject_server.pcap": [
+      {
+        "client": "198.18.1.104",
+        "row_id": "A00028",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.151",
+        "row_id": "A01611",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.160",
+        "row_id": "A01620",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.169",
+        "row_id": "A01629",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.152",
+        "row_id": "A01868",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.175",
+        "row_id": "A01891",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.8.191",
+        "row_id": "A01907",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:110"
+      },
+      {
+        "client": "198.18.10.30",
+        "row_id": "A02258",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.57",
+        "row_id": "A02285",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.85",
+        "row_id": "A02313",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.157",
+        "row_id": "A03409",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "no_forward_secrecy.pcap": [
+      {
+        "client": "198.18.8.116",
+        "row_id": "A01832",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.138",
+        "row_id": "A01854",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.160",
+        "row_id": "A01876",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.219",
+        "row_id": "A02447",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.242",
+        "row_id": "A02470",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.165",
+        "row_id": "A03417",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.234",
+        "row_id": "A03486",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.1",
+        "row_id": "A03509",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "nonstandard_port.pcap": [
+      {
+        "client": "198.18.1.106",
+        "row_id": "A00030",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:1110"
+      },
+      {
+        "client": "198.18.7.153",
+        "row_id": "A01613",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:1143"
+      },
+      {
+        "client": "198.18.7.162",
+        "row_id": "A01622",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:1110"
+      },
+      {
+        "client": "198.18.7.171",
+        "row_id": "A01631",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:1143"
+      },
+      {
+        "client": "198.18.8.154",
+        "row_id": "A01870",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:2525"
+      },
+      {
+        "client": "198.18.8.177",
+        "row_id": "A01893",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:2525"
+      },
+      {
+        "client": "198.18.8.193",
+        "row_id": "A01909",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:1110"
+      },
+      {
+        "client": "198.18.10.32",
+        "row_id": "A02260",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:2525"
+      },
+      {
+        "client": "198.18.10.59",
+        "row_id": "A02287",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:1143"
+      },
+      {
+        "client": "198.18.14.159",
+        "row_id": "A03411",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:2525"
+      }
+    ],
+    "strip_refuse.pcap": [
+      {
+        "client": "198.18.1.102",
+        "row_id": "A00026",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.149",
+        "row_id": "A01609",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.158",
+        "row_id": "A01618",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.167",
+        "row_id": "A01627",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.150",
+        "row_id": "A01866",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.173",
+        "row_id": "A01889",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.8.189",
+        "row_id": "A01905",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.2:110"
+      },
+      {
+        "client": "198.18.10.28",
+        "row_id": "A02256",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.55",
+        "row_id": "A02283",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.83",
+        "row_id": "A02311",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.155",
+        "row_id": "A03407",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "strip_remove.pcap": [
+      {
+        "client": "198.18.7.156",
+        "row_id": "A01616",
+        "variant": "strip_remove",
+        "issues": [
+          "strip_remove"
+        ],
+        "expected_rules": [
+          "SMS-BASE-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.171",
+        "row_id": "A01887",
+        "variant": "strip_remove",
+        "issues": [
+          "strip_remove"
+        ],
+        "expected_rules": [
+          "SMS-BASE-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      }
+    ],
+    "strip_rewrite.pcap": [
+      {
+        "client": "198.18.1.101",
+        "row_id": "A00025",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:110"
+      },
+      {
+        "client": "198.18.7.148",
+        "row_id": "A01608",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.7.157",
+        "row_id": "A01617",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.166",
+        "row_id": "A01626",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      },
+      {
+        "client": "198.18.8.149",
+        "row_id": "A01865",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.8.172",
+        "row_id": "A01888",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.10.27",
+        "row_id": "A02255",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.54",
+        "row_id": "A02282",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.10.82",
+        "row_id": "A02310",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:25"
+      },
+      {
+        "client": "198.18.14.154",
+        "row_id": "A03406",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      }
+    ],
+    "tls_1_0.pcap": [
+      {
+        "client": "198.18.8.112",
+        "row_id": "A01828",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.134",
+        "row_id": "A01850",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.156",
+        "row_id": "A01872",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.215",
+        "row_id": "A02443",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.238",
+        "row_id": "A02466",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.161",
+        "row_id": "A03413",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.230",
+        "row_id": "A03482",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.14.253",
+        "row_id": "A03505",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "tls_1_1.pcap": [
+      {
+        "client": "198.18.8.113",
+        "row_id": "A01829",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.135",
+        "row_id": "A01851",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.157",
+        "row_id": "A01873",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.216",
+        "row_id": "A02444",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.239",
+        "row_id": "A02467",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.162",
+        "row_id": "A03414",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.231",
+        "row_id": "A03483",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.14.254",
+        "row_id": "A03506",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "tls_compression.pcap": [
+      {
+        "client": "198.18.8.117",
+        "row_id": "A01833",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.139",
+        "row_id": "A01855",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "IMAP",
+        "server": "198.51.100.25:143"
+      },
+      {
+        "client": "198.18.8.161",
+        "row_id": "A01877",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.3:587"
+      },
+      {
+        "client": "198.18.10.220",
+        "row_id": "A02448",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.4:25"
+      },
+      {
+        "client": "198.18.10.243",
+        "row_id": "A02471",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.2:143"
+      },
+      {
+        "client": "198.18.14.166",
+        "row_id": "A03418",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "SMTP",
+        "server": "198.51.100.25:25"
+      },
+      {
+        "client": "198.18.14.235",
+        "row_id": "A03487",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "SMTP",
+        "server": "172.18.0.2:25"
+      },
+      {
+        "client": "198.18.15.2",
+        "row_id": "A03510",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "IMAP",
+        "server": "172.18.0.3:143"
+      }
+    ],
+    "mixed-scenario.pcap": [
+      {
+        "client": "198.18.7.157",
+        "row_id": "A01617",
+        "variant": "strip_rewrite",
+        "issues": [
+          "strip_rewrite"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.158",
+        "row_id": "A01618",
+        "variant": "strip_refuse",
+        "issues": [
+          "strip_refuse"
+        ],
+        "expected_rules": [
+          "SMS-STRIP-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.159",
+        "row_id": "A01619",
+        "variant": "inject_client",
+        "issues": [
+          "inject_client"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.160",
+        "row_id": "A01620",
+        "variant": "inject_server",
+        "issues": [
+          "inject_server"
+        ],
+        "expected_rules": [
+          "SMS-INJ-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.161",
+        "row_id": "A01621",
+        "variant": "cleartext_credentials",
+        "issues": [
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CRED-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.1.106",
+        "row_id": "A00030",
+        "variant": "nonstandard_port",
+        "issues": [
+          "nonstandard_port"
+        ],
+        "expected_rules": [
+          "SMS-PORT-001"
+        ],
+        "protocol": "POP3",
+        "server": "198.51.100.25:1110"
+      },
+      {
+        "client": "198.18.7.163",
+        "row_id": "A01623",
+        "variant": "handshake_failure",
+        "issues": [
+          "handshake_failure"
+        ],
+        "expected_rules": [
+          "SMS-TLS-007"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.124",
+        "row_id": "A01840",
+        "variant": "combo",
+        "issues": [
+          "no_forward_secrecy",
+          "cert_sha1",
+          "cleartext_credentials"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005",
+          "SMS-CRED-001",
+          "SMS-TLS-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.7.156",
+        "row_id": "A01616",
+        "variant": "strip_remove",
+        "issues": [
+          "strip_remove"
+        ],
+        "expected_rules": [
+          "SMS-BASE-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.112",
+        "row_id": "A01828",
+        "variant": "tls_1_0",
+        "issues": [
+          "tls_1_0"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.113",
+        "row_id": "A01829",
+        "variant": "tls_1_1",
+        "issues": [
+          "tls_1_1"
+        ],
+        "expected_rules": [
+          "SMS-TLS-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.114",
+        "row_id": "A01830",
+        "variant": "cipher_3des",
+        "issues": [
+          "cipher_3des"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.115",
+        "row_id": "A01831",
+        "variant": "cipher_rc4",
+        "issues": [
+          "cipher_rc4"
+        ],
+        "expected_rules": [
+          "SMS-TLS-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.116",
+        "row_id": "A01832",
+        "variant": "no_forward_secrecy",
+        "issues": [
+          "no_forward_secrecy"
+        ],
+        "expected_rules": [
+          "SMS-TLS-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.117",
+        "row_id": "A01833",
+        "variant": "tls_compression",
+        "issues": [
+          "tls_compression"
+        ],
+        "expected_rules": [
+          "SMS-TLS-008"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.118",
+        "row_id": "A01834",
+        "variant": "downgrade_sentinel",
+        "issues": [
+          "downgrade_sentinel"
+        ],
+        "expected_rules": [
+          "SMS-TLS-010"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.119",
+        "row_id": "A01835",
+        "variant": "cert_self_signed",
+        "issues": [
+          "cert_self_signed"
+        ],
+        "expected_rules": [
+          "SMS-CERT-002"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.120",
+        "row_id": "A01836",
+        "variant": "cert_expired",
+        "issues": [
+          "cert_expired"
+        ],
+        "expected_rules": [
+          "SMS-CERT-001"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.121",
+        "row_id": "A01837",
+        "variant": "cert_weak_key",
+        "issues": [
+          "cert_weak_key"
+        ],
+        "expected_rules": [
+          "SMS-CERT-004"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.122",
+        "row_id": "A01838",
+        "variant": "cert_sha1",
+        "issues": [
+          "cert_sha1"
+        ],
+        "expected_rules": [
+          "SMS-CERT-005"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.8.123",
+        "row_id": "A01839",
+        "variant": "cert_untrusted",
+        "issues": [
+          "cert_untrusted"
+        ],
+        "expected_rules": [
+          "SMS-CERT-007"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      },
+      {
+        "client": "198.18.11.16",
+        "row_id": "A02500",
+        "variant": "cert_hostname_mismatch",
+        "issues": [
+          "cert_hostname_mismatch"
+        ],
+        "expected_rules": [
+          "SMS-CERT-003"
+        ],
+        "protocol": "POP3",
+        "server": "172.18.0.3:110"
+      }
+    ]
+  }
+}
